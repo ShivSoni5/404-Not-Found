@@ -1,18 +1,17 @@
 html {
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
 body {
     margin: 0%;
+    padding: 40px 80px;
     font-family: 'Space Mono';
+    height: 100%;
 }
 
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-.page-wrapper {
-    margin: 40px 80px;
+:focus {
+    outline: 0;
 }
 
 .not-found {
@@ -20,18 +19,34 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 25px;
-    letter-spacing: -0.08em;
-    text-transform: uppercase;
-    position: fixed;
 }
 
 .content-wrapper {
     position: absolute;
-    top: 23%;
+    top: 25%;
     left: 15%;
     right: 15%;
     display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .not-found {
+        font-size: 20px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        top: 18%;
+        left: 12%;
+        right: 12%;
+    }
+    img {
+        max-width: 100%;
+        margin-left: 13%;
+    }
 }
 
 img {
@@ -45,14 +60,15 @@ img {
 
 .heading {
     font-weight: bold;
-    font-size: 46px;
+    font-size: 45px;
     margin-bottom: 20px;
+    line-height: 60px;
 }
 
 .description {
     margin-bottom: 50px;
-    font-size: 22px;
-    width: 95%;
+    font-size: 17px;
+    width: 75%;
 }
 
 button {
@@ -63,4 +79,13 @@ button {
     width: 175px;
     font-weight: 700;
     font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 42%;
+    color: #BDBDBD;
 }
