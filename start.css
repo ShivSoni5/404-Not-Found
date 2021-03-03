@@ -42,6 +42,11 @@ body {
     display: flex;
 }
 
+img {
+    max-width: 80%;
+    height: auto;
+}
+
 .content {
     width: 90%;
 }
