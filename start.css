@@ -4,11 +4,15 @@ html {
 
 body {
     margin: 0%;
-    padding: 40px 80px;
+    font-family: 'Space Mono';
 }
 
 *, ::after, ::before {
     box-sizing: inherit;
+}
+
+.page-wrapper {
+    margin: 40px 80px;
 }
 
 .not-found {
@@ -20,4 +24,38 @@ body {
     letter-spacing: -0.08em;
     text-transform: uppercase;
     position: fixed;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    right: 15%;
+    display: flex;
+}
+
+.content {
+    width: 90%;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 50px;
+    font-size: 22px;
+    width: 80%;
+}
+
+button {
+    border: none;
+    background-color: #333333;
+    color: #FFFFFF;
+    height: 50px;
+    width: 175px;
+    font-weight: 700;
+    font-size: 12px;
 }
