@@ -30,24 +30,7 @@ body {
     height: calc(100% - 50px);
     justify-content: center;
     align-items: center;
-    /* padding: 200px 60px 0px 60px; */
-}
-
-@media only screen and (max-width: 600px) {
-    body {}
-    .not-found {
-        font-size: 20px;
-    }
-    .content-wrapper {
-        flex-direction: column;
-        top: 18%;
-        left: 12%;
-        right: 12%;
-    }
-    img {
-        max-width: 100%;
-        margin-left: 13%;
-    }
+    padding: 0px 110px;
 }
 
 img {
@@ -87,4 +70,31 @@ button {
 .footer {
     color: #BDBDBD;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px 10px 5px 10px;
+    }
+    .not-found {
+        font-size: 18px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        padding: 15px 10px 0px;
+        height: calc(100% - 51px);
+    }
+    .scarecrow {
+        padding-left: 15%;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .description {
+        font-size: 15px;
+        width: 90%;
+    }
+    .footer {
+        font-size: 10px;
+    }
 }
