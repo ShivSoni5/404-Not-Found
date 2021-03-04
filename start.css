@@ -82,10 +82,13 @@ button {
     .content-wrapper {
         flex-direction: column;
         padding: 15px 10px 0px;
-        height: calc(100% - 51px);
+        height: calc(100% - 50px);
     }
     .scarecrow {
         padding-left: 15%;
+    }
+    .content {
+        padding: 5px 0px 0px 35px;
     }
     .heading {
         font-size: 35px;
@@ -93,6 +96,7 @@ button {
     .description {
         font-size: 15px;
         width: 90%;
+        margin-bottom: 30px;
     }
     .footer {
         font-size: 10px;
